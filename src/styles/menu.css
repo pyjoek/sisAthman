@@ -1,0 +1,48 @@
+.conts {
+    display: flex;
+    flex-direction: row;
+}
+.social {
+    float: left;
+    width: 40%;
+    text-align: center;
+    align-self: center;
+}
+
+.social div {
+    text-align: center;
+    align-self: center;
+}
+
+hr {
+    width: 300px;
+}
+.email {
+    float: right;
+    width: 60%;
+}
+
+.email form{
+    display: flex;
+    flex-direction: column;
+}
+.email form input, textarea, .ii{
+    margin: 1rem;
+}
+
+.drawer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px; /* adjust the width as needed */
+    height: 300px; /* adjust the height as needed */
+    background-color: yellow;
+    z-index: 1; /* make sure it's on top of the contents */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black; /* add a border for visibility */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* add a shadow for depth */
+  }

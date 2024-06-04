@@ -2,6 +2,23 @@
   text-align: center;
 }
 
+.navy button img {
+    width: 30px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.mine{
+  background-color: #ffffe4;
+
+}
+
+.top {
+  position: fixed;
+  text-align: right;
+  color: #ffffe4;
+  z-index: 1000;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

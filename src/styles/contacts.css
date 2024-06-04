@@ -1,0 +1,37 @@
+.conts {
+    display: flex;
+    flex-direction: row;
+}
+.social {
+    float: left;
+    width: 40%;
+    text-align: center;
+    align-self: center;
+}
+
+.social div {
+    text-align: center;
+    align-self: center;
+}
+
+hr {
+    width: 300px;
+}
+.email {
+    float: right;
+    width: 60%;
+}
+
+.email form{
+    display: flex;
+    flex-direction: column;
+}
+.email form input, textarea, .ii{
+    margin: 1rem;
+}
+
+.drawer {
+    max-width: 400px;
+    height: max-content;
+    
+}

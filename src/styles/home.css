@@ -1,0 +1,47 @@
+.topimg {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.topimg {
+    animation: zoomLoop 20s ease-in-out infinite alternate;
+    max-width: 100%; /* Ensures the image doesn't exceed its container's width */
+}
+
+@keyframes zoomLoop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2); /* Zoom in */
+    }
+    100% {
+        transform: scale(1); /* Restore to original size */
+    }
+}
+
+.conts {
+    justify-content: center;
+}
+
+.images {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.aboutUs {
+    margin-bottom: 5rem;
+}
+.aboutUs div {
+    text-align: center;
+    margin: 1rem;
+}
+.aboutUs hr {
+    width: 300px;
+    color: black;
+    height: 2px;
+}
