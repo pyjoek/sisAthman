@@ -68,7 +68,7 @@ function Home() {
                     <div className='col-sm-4 order-sm-first'>
                         <img src={a} alt="pic 1" className='images img-fluid mx-auto d-block'/>
                     </div>
-                    <div className='desc col-sm-7 order-sm-last'>
+                    <div className='desc col-sm-6 order-sm-last'>
                         <p>
                             <h2>Waterfall & Coffee Walking Tour</h2> 
                             Spend a day immersed in Tanzania’s beautiful 
@@ -81,7 +81,10 @@ function Home() {
                 </div>
 
                 <div className="conts row">
-                    <div className='desc col-sm-7 order-sm-last'>
+                    <div className='col-sm-4 order-sm-last'>
+                        <img src={b} alt="pic 1" className='images img-fluid mx-auto d-block'/>
+                    </div>
+                    <div className='desc col-sm-7 order-sm-first'>
                         <p>
                         <h2>Waterfall & Coffee Walking Tour </h2>
                         1000 times rarer than diamonds, Tanzanite—similar in 
@@ -91,9 +94,6 @@ function Home() {
                         with locals about its importance. Of course, you’ll also tour locally owned boutiques 
                         to go home with a gem yourself.
                         </p>
-                    </div>
-                    <div className='col-sm-4 order-sm-first'>
-                        <img src={b} alt="pic 1" className='images img-fluid mx-auto d-block'/>
                     </div>
                 </div>
 
@@ -114,7 +114,10 @@ function Home() {
                 </div>
 
                 <div className="conts row">
-                    <div className='desc col-sm-7 order-sm-last'>
+                    <div className='col-sm-4 order-sm-last'>
+                        <img src={d} alt="pic 1" className='images img-fluid mx-auto d-block'/>
+                    </div>
+                    <div className='desc col-sm-7 order-sm-first'>
                         <p>
                         <h2>Hot Air Balloon Safari </h2>
                         A hot air balloon safari is a unique and thrilling way to 
@@ -122,9 +125,6 @@ function Home() {
                          allows you to experience the serene landscape from above, witnessing the diverse
                          wildlife and natural landscapes while floating effortlessly in the sky. 
                         </p>
-                    </div>
-                    <div className='col-sm-4 order-sm-first'>
-                        <img src={d} alt="pic 1" className='images img-fluid mx-auto d-block'/>
                     </div>
                 </div>
 
@@ -145,15 +145,15 @@ function Home() {
                 </div>
 
                 <div className="conts row">
-                    <div className='desc col-sm-7 order-sm-last'>
+                    <div className='col-sm-4 order-sm-last'>
+                        <img src={f} alt="pic 1" className='images img-fluid mx-auto d-block'/>
+                    </div>
+                    <div className='desc col-sm-7 order-sm-first'>
                         <p>
                         <h2>Cultural Tours & Markets</h2>
                         Learn how to help the Massai community, know its schools, medical centers and its way 
                         of life in Tanzania
                         </p>
-                    </div>
-                    <div className='col-sm-4 order-sm-first'>
-                        <img src={f} alt="pic 1" className='images img-fluid mx-auto d-block'/>
                     </div>
                 </div>
 
