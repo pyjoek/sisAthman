@@ -1,17 +1,26 @@
+// styles
 import './App.css';
 import './styles/conts.css'
 import './styles/style.css'
+// pages
 import { useState, useEffect } from 'react';
 import Home from './comp/home';
 import Safari from './comp/safari';
 import Kilimanjaro from './comp/kilimanjaro';
 import Island from './comp/island';
-// import Menu from './comp/menu';
+// bottom icons
 import home from './img/icons/homeicon.png';
 import safari from './img/icons/safariicon.png';
 import kili from './img/icons/kiliicon.png';
 import island from './img/icons/islandicon.png';
 import menu from './img/icons/menuicon.png';
+// menu icons
+import wa from './img/icons/wa.jpeg'
+import fb from './img/icons/fb.png'
+import ig from './img/icons/ig.webp'
+import twit from './img/icons/twit.webp'
+import mail from './img/icons/em.jpg'
+import lp from './img/icons/lp.png'
 
 function App() {
   const [body, setBody] = useState(<Home />);
@@ -36,63 +45,29 @@ function App() {
         <div className="overlay"></div>
         <div className="content">
           <div className="close-btn">&times;</div>
-                <div className="col-sm-5">
-                <h3>WhatsApp</h3>
-                    <p><a href="https://wa.me/+255769477422">Click here to chat on WhatsApp</a></p>
+                <div className="icon">
+                <div>
+                    <p><a href="https://wa.me/+255769477422"><img src={wa} alt="" className='icons'/></a></p>
                 </div>
                 <hr/>
-                <div className="col-sm-5">
-                    <h3>Email</h3>
-                    <p><a href="mailto:joelnrlson@gmail.com">Send us an Email</a></p>
+                <div>
+                    <p><a href="mailto:joelnrlson@gmail.com"><img src={mail} alt="" className='icons'/></a></p>
                 </div>
                 <hr/>
-                <div className="col-sm-5">
-                    <h3>Instagram</h3>
-                    <p><a href="https://www.instagram.com/afroniatourstz?igsh=NTc4MTIwNjQ2YQ==">Visit our Instagram</a></p>
+                <div> 
+                    <p><a href="https://www.instagram.com/afroniatourstz?igsh=NTc4MTIwNjQ2YQ=="><img src={ig} className='icons' alt="" /></a></p>
                 </div>
                 <hr/>
-                <div className="col-sm-5">
-                    <h3>Facebook</h3>
-                    <p><a href="https://www.facebook.com/profile.php?id=61559525511160&mibextid=rS40aB7S9Ucbxw6v">Visit our Facebook</a></p>
+                <div>
+                    <p><a href="https://www.facebook.com/profile.php?id=61559525511160&mibextid=rS40aB7S9Ucbxw6v"><img className='icons' src={fb} alt="" /></a></p>
                 </div>
                 <hr/>
-                <div className="col-sm-5">
-                    <h3>Twitter</h3>
-                    <p><a href="https://twitter.com/anonymous">Follow us on Twitter</a></p>
+                <div>
+                    <p><a href="https://twitter.com/anonymous"><img src={twit} alt="" className='icons'/></a></p>
                 </div>
-                <hr/>
-                <div className="col-sm-5">
-                    <h3>Location</h3>
-                    <p>Arusha, Tanzania</p>
                 </div>
-                <div className="col-sm-5">
-                <h3>WhatsApp</h3>
-                    <p><a href="https://wa.me/+255769477422">Click here to chat on WhatsApp</a></p>
-                </div>
-                <hr/>
-                <div className="col-sm-5">
-                    <h3>Email</h3>
-                    <p><a href="mailto:joelnrlson@gmail.com">Send us an Email</a></p>
-                </div>
-                <hr/>
-                <div className="col-sm-5">
-                    <h3>Instagram</h3>
-                    <p><a href="https://www.instagram.com/afroniatourstz?igsh=NTc4MTIwNjQ2YQ==">Visit our Instagram</a></p>
-                </div>
-                <hr/>
-                <div className="col-sm-5">
-                    <h3>Facebook</h3>
-                    <p><a href="https://www.facebook.com/profile.php?id=61559525511160&mibextid=rS40aB7S9Ucbxw6v">Visit our Facebook</a></p>
-                </div>
-                <hr/>
-                <div className="col-sm-5">
-                    <h3>Twitter</h3>
-                    <p><a href="https://twitter.com/anonymous">Follow us on Twitter</a></p>
-                </div>
-                <hr/>
-                <div className="col-sm-5">
-                    <h3>Location</h3>
-                    <p>Arusha, Tanzania</p>
+                <div>
+                    <p><img src={lp} alt="" className='icons'/>Arusha, Tanzania</p>
                 </div>
             </div>
       </div>

@@ -20,3 +20,13 @@
     justify-content: space-around;
     padding-top: 6px;
 }
+
+.icons{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+.icon {
+    display: flex;
+    flex-direction: row;
+}
