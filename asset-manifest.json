@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/pyjoek.github.io/static/css/main.8a9328e9.css",
+    "main.js": "/pyjoek.github.io/static/js/main.b48ccf4e.js",
+    "static/media/safari_car.jpg": "/pyjoek.github.io/static/media/safari_car.9e9c24cad0ee0ed55b91.jpg",
+    "static/media/ig.webp": "/pyjoek.github.io/static/media/ig.9b8145eaf9e3c7c88d85.webp",
+    "static/media/6.webp": "/pyjoek.github.io/static/media/6.a9390053cc4dbee752ab.webp",
+    "static/media/spice.jpg": "/pyjoek.github.io/static/media/spice.00e11d4aac5a3e67430f.jpg",
+    "static/media/5.jpg": "/pyjoek.github.io/static/media/5.dfd3ec3930f848210a1f.jpg",
+    "static/media/2.jpg": "/pyjoek.github.io/static/media/2.7673bc295cdd4e5a90e9.jpg",
+    "static/media/historical.jpeg": "/pyjoek.github.io/static/media/historical.69983707ae1d01ff1643.jpeg",
+    "static/media/wildlife.webp": "/pyjoek.github.io/static/media/wildlife.5d8919574e73eb8baecd.webp",
+    "static/media/homeTop.jpg": "/pyjoek.github.io/static/media/homeTop.f4f2f0a54e5c221459e5.jpg",
+    "static/media/4.jpg": "/pyjoek.github.io/static/media/4.ce65cd174dd8691fc509.jpg",
+    "static/media/em.jpg": "/pyjoek.github.io/static/media/em.6952f056356e73a1d3fa.jpg",
+    "static/media/islandicon.png": "/pyjoek.github.io/static/media/islandicon.70d5ac3b1d9cd29dcee4.png",
+    "static/media/3.jpg": "/pyjoek.github.io/static/media/3.270cd2a4496ef7dc14f0.jpg",
+    "static/media/kiliicon.png": "/pyjoek.github.io/static/media/kiliicon.87bc849093b274cdd4d6.png",
+    "static/media/homeicon.png": "/pyjoek.github.io/static/media/homeicon.752a4d19424e7b3ffac1.png",
+    "static/media/twit.webp": "/pyjoek.github.io/static/media/twit.3f0045d2fdd9f93083e1.webp",
+    "index.html": "/pyjoek.github.io/index.html",
+    "main.8a9328e9.css.map": "/pyjoek.github.io/static/css/main.8a9328e9.css.map",
+    "main.b48ccf4e.js.map": "/pyjoek.github.io/static/js/main.b48ccf4e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8a9328e9.css",
+    "static/js/main.b48ccf4e.js"
+  ]
+}
