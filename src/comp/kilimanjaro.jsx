@@ -1,8 +1,11 @@
+import "../styles/kili.css"
+
 function Kilimanjaro() {
     return(
         <main>
-            <div>
                 <h1>Mount Kilimanjaro</h1>
+            <img className="images" src="https://files.worldwildlife.org/wwfcmsprod/images/kilimanjaro_facts_travel_blog/blog_show/5d7xnq6x77_1203668448_73.jpg" alt="Mount kilimanjaro" />
+            <div>
                 <p>
                 Mount Kilimanjaro, located in Tanzania, is the highest peak in Africa, standing at 
                 approximately 5,895 meters (19,341 feet) above sea level. It is a free-standing 

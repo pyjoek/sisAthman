@@ -28,7 +28,7 @@ function Island() {
         </center>
       </section>
       <section className="luxury-package">
-        <img src={spice} alt="" className='spice img-fluid mx-auto d-block'/>
+        <img src="https://www.babusafaris.com/src/uploads/image/tour_gallery_87.jpg" alt="" className='spice img-fluid mx-auto d-block'/>
         <h2>Luxury Resort Package</h2>
         <center>
         <p>

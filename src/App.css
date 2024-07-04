@@ -11,6 +11,9 @@
   background-color: #ffffe4;
 
 }
+.navy .home{
+  width: 15px;
+}
 
 .top {
   position: fixed;

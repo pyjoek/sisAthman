@@ -9,7 +9,7 @@ import Safari from './comp/safari';
 import Kilimanjaro from './comp/kilimanjaro';
 import Island from './comp/island';
 // bottom icons
-import home from './img/icons/homeicon.png';
+import home from './img/icons/home.png';
 import safari from './img/icons/safariicon.png';
 import kili from './img/icons/kiliicon.png';
 import island from './img/icons/islandicon.png';
@@ -74,7 +74,7 @@ function App() {
 
       <nav className="navy">
         <button className="btn mine" onClick={() => {
-          if (body !== <Home/>) {setBody(<Home/>);}}}><img src={home} alt="Home" /></button>
+          if (body !== <Home/>) {setBody(<Home/>);}}}><img className="home" src={home} alt="Home" /></button>
 
         <button className="btn mine" onClick={() => {
           if (body !== <Safari/>) {setBody(<Safari/>);}}}><img src={safari} alt="safari" /></button>

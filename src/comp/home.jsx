@@ -11,7 +11,7 @@ import '../styles/home.css';
 function Home() {
     return(
         <>
-        <main>
+        <section>
             <div><img src={home} alt="pic 1" className='topimg'/></div>
             <div className="aboutUs">
                 <div>
@@ -66,7 +66,7 @@ function Home() {
 
                 <div className="conts row">
                     <div className='col-sm-4 order-sm-first'>
-                        <img src={a} alt="pic 1" className='images img-fluid mx-auto d-block'/>
+                        <img src="https://www.exploretanzaniatours.com/wp-content/uploads/2022/08/materuni-waterfalls-beautiful-750x450.jpg" alt="pic 1" className='images img-fluid mx-auto d-block'/>
                     </div>
                     <div className='desc col-sm-6 order-sm-last'>
                         <p>
@@ -159,7 +159,7 @@ function Home() {
 
 
             </div>
-        </main>
+        </section>
         </>
     )
 }
