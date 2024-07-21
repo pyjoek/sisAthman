@@ -42,7 +42,7 @@ function Kilimanjaro() {
             </div>
 
             <div>
-                <h1>significance</h1>
+                <h1>Significance</h1>
                 <p>
                 Kilimanjaro is a popular destination for trekkers and climbers from around the world, attracting 
                 thousands each year. It serves as an important water source for the surrounding regions, feeding

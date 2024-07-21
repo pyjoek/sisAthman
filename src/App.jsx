@@ -2,6 +2,7 @@
 import './App.css';
 import './styles/conts.css'
 import './styles/style.css'
+import logo from './img/icons/afronia.png'
 // pages
 import { useState, useEffect } from 'react';
 import Home from './comp/home';
@@ -18,7 +19,6 @@ import menu from './img/icons/menuicon.png';
 import wa from './img/icons/wa.jpeg'
 import fb from './img/icons/fb.png'
 import ig from './img/icons/ig.webp'
-import twit from './img/icons/twit.webp'
 import mail from './img/icons/em.jpg'
 import lp from './img/icons/lp.png'
 
@@ -35,9 +35,9 @@ function App() {
   
   return (
     <section>
-      {/* <nav className="top">
-            <h1>Jina la kampuni lina kaa hapa</h1>
-        </nav> */}
+      <nav className="top">
+            <img src={logo} alt="" />
+        </nav>
 
       {body}
 
@@ -47,44 +47,42 @@ function App() {
           <div className="close-btn">&times;</div>
                 <div className="icon">
                 <div>
-                    <p><a href="https://wa.me/+255769477422"><img src={wa} alt="" className='icons'/></a></p>
+                    <p><a href="https://wa.me/+255769477422" target='_blank'><img src={wa} alt="" className='icons'/></a></p>
                 </div>
                 <hr/>
                 <div>
-                    <p><a href="mailto:joelnrlson@gmail.com"><img src={mail} alt="" className='icons'/></a></p>
-                </div>
-                <hr/>
-                <div> 
-                    <p><a href="https://www.instagram.com/afroniatourstz?igsh=NTc4MTIwNjQ2YQ=="><img src={ig} className='icons' alt="" /></a></p>
+                    <p><a href="mailto:Info@afroniatours.co.tz" target='_blank'><img src={mail} alt="" className='icons'/></a></p>
                 </div>
                 <hr/>
                 <div>
-                    <p><a href="https://www.facebook.com/profile.php?id=61559525511160&mibextid=rS40aB7S9Ucbxw6v"><img className='icons' src={fb} alt="" /></a></p>
+                    <p><a href="https://www.instagram.com/afroniatourstz?igsh=NTc4MTIwNjQ2YQ==" target='_blank'><img src={ig} className='icons' alt="" /></a></p>
                 </div>
                 <hr/>
                 <div>
-                    <p><a href="https://twitter.com/anonymous"><img src={twit} alt="" className='icons'/></a></p>
+                    <p><a href="https://www.facebook.com/profile.php?id=61559525511160&mibextid=rS40aB7S9Ucbxw6v" target='_blank'><img className='icons' src={fb} alt="" /></a></p>
                 </div>
+                <hr/>
                 </div>
                 <div>
-                    <p><img src={lp} alt="" className='icons'/>Arusha, Tanzania</p>
+                    <p><img src={lp} alt="" className='icons'/><a href="#">Arusha, Tanzania</a></p>
                 </div>
             </div>
       </div>
 
       <nav className="navy">
         <button className="btn mine" onClick={() => {
-          if (body !== <Home/>) {setBody(<Home/>);}}}><img className="home" src={home} alt="Home" /></button>
+          if (body !== <Home/>) {setBody(<Home/>);}}}><div><img className="home" src={home} alt="Home" /><p>Home</p></div></button>
 
         <button className="btn mine" onClick={() => {
-          if (body !== <Safari/>) {setBody(<Safari/>);}}}><img src={safari} alt="safari" /></button>
+          if (body !== <Safari/>) {setBody(<Safari/>);}}}><div><img src={safari} alt="safari" /><p>Safari</p></div></button>
 
         <button className="btn mine" onClick={() => {
-          if (body !== <Kilimanjaro/>) {setBody(<Kilimanjaro/>);}}}><img src={kili} alt="kili" /></button>
+          if (body !== <Kilimanjaro/>) {setBody(<Kilimanjaro/>);}}}><div><img src={kili} alt="kili" /><p>Kilimanjaro</p></div></button>
 
         <button className="btn mine" onClick={() => {
-          if (body !== <Island/>) {setBody(<Island/>);}}}><img src={island} alt="island" /></button>
-        <button className="btn mine menu" onClick={togglePopup}><img src={menu} alt="menu" /></button>
+          if (body !== <Island/>) {setBody(<Island/>);}}}><div><img src={island} alt="island" /><p>Island</p></div></button>
+
+        <button className="btn mine menu" onClick={togglePopup}><img src={menu} alt="menu" /><p>Menu</p></button>
       </nav>
       
     </section>

@@ -1,4 +1,3 @@
-import safaricar from '../img/safari_car.jpg';
 import '../styles/safari.css';
 import wildlife from '../img/wildlife.webp';
 
@@ -58,7 +57,8 @@ function Safari() {
                 <p>During your safari, expect to spend significant time in vehicles for game drives, typically 5-8 hours daily. Sometimes, there are opportunities for walking safaris. You can also choose to have rest days at lodges, enjoying a more relaxed pace and lodge amenities.</p>
                 <p>The choice of a tour company with comfortable, well-equipped vehicles is essential for a great Tanzania safari experience. Our fleet includes customized Land Cruisers made in 2016-2023. Each vehicle is outfitted with amenities like Wi-Fi, a fridge, comfortable seating, and charging stations, making even long drives enjoyable.</p>
                 <p>We take vehicle maintenance seriously, ensuring each car is thoroughly checked and in top condition before every safari. This attention to detail ensures smooth travel to various national parks, minimizing the chances of any issues during your journey.</p>
-                <img src={safaricar} className="img-fluid rounded" alt="Safari vehicle in Tanzania" />
+                <img src="https://images.stockcake.com/public/3/d/6/3d63a6b9-6627-48eb-80b8-855c352deeea_large/safari-sunset-adventure-stockcake.jpg"
+                 className="img-fluid rounded" alt="Safari vehicle in Tanzania" />
             </section>
             
             <section className="mb-5">
@@ -66,6 +66,8 @@ function Safari() {
                 <p>Tanzania safaris are not just about wilderness adventures. The lodges where you stay play a big part in the experience too. Picture enjoying a drink on a terrace, overlooking the sprawling savannah – it's quintessential safari.</p>
                 <p>At Altezza, choosing the right lodges for our Tanzania safari tours is key. We scrutinize everything from room quality to staff professionalism and menu variety. Our team personally visits each lodge to ensure they match our high standards.</p>
                 <p>The location of lodges is vital. We pick lodges and camps for their stunning views, both from guest rooms and communal areas. Whether in the Serengeti, near the Ngorongoro Crater, or by Lake Manyara, you'll always feel immersed in the savannah's spirit.</p>
+               <img src="https://cloudfront.safaribookings.com/blog/2021/11/00-top-10-best-tanzania-safari-lodges-camps-BW-header1200px.jpg"
+                 className="img-fluid rounded" alt="Safari vehicle in Tanzania" />
             </section>
             
             <section className="mb-5">
@@ -73,6 +75,8 @@ function Safari() {
                 <p>A luxury Tanzania safari offers a lavish twist on the classic adventure. These safaris stand out with their exceptional lodges. Akin to Europe's finest hotels they feature impeccable service and gourmet dining. At these lodges, you can indulge in an exquisite culinary journey, featuring luxury gourmet foods from Europe and beyond, alongside top-notch local organic dishes. This includes high-end wines and champagnes, an array of gourmet cheeses and cured meats, and much more. The rooms in these lodges exude luxury, offering spacious interiors elegantly furnished with handcrafted pieces. This level of opulence makes them a favored choice among celebrities and discerning travelers.</p>
                 <p>Booking early is key. Especially during peak seasons from late December to early March and late June to mid-October, when these lodges fill up fast. To secure your spot, we recommend reserving 3-4 months in advance.</p>
                 <p>We collaborate with prestigious hotel chains like Four Seasons, Singita, One Nature, and others, ensuring a premium stay for our guests. Additionally, we provide tailored charter logistics between parks and lodges, offering private jet transfers for an exclusive and seamless travel experience. This service is particularly advantageous during the peak season.</p>
+                <img src="https://www.backtoafricasafaris.com/wp-content/uploads/2021/07/luxury-tanzania-safari-tours.jpg"
+                 className="img-fluid rounded" alt="Safari vehicle in Tanzania" />
             </section>
             
             <section className="mb-5">
@@ -87,6 +91,9 @@ function Safari() {
                     bush aviation offers a practical and enjoyable way to travel. It adds a touch of adventure to 
                     your safari, with breathtaking aerial views of the landscape below.</p>
                 </div>
+               
+                <img src="https://travelguide.co.tz/wp-content/uploads/2018/04/Marc-Mol_3_small.jpg"
+                 className="img-fluid rounded" alt="Safari vehicle in Tanzania" />
             </section>
         </main>
     );

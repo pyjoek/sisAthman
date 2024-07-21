@@ -1,14 +1,18 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .navy button img {
     width: 30px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
 }
 
+.navy button p {
+  font-size: 12px;
+}
+
 .mine{
-  background-color: #ffffe4;
+  background-color: #ffffff;
 
 }
 .navy .home{
@@ -16,10 +20,16 @@
 }
 
 .top {
-  position: fixed;
-  text-align: right;
-  color: #ffffe4;
+  /* position: fixed; */
   z-index: 1000;
+}
+
+.top img {
+  width: 100px;
+  float: left; /* Optional, for older layout compatibility */
+  display: flex; /* Use flexbox */
+  justify-content: flex-end; /* Align items to the end of the flex container */
+  flex-direction: row; /* Default value for flex-direction is 'row', so 'initial' isn't necessary */
 }
 
 .App-logo {
