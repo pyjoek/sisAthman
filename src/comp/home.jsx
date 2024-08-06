@@ -1,5 +1,5 @@
-import home from '../img/homeTop.jpg';
 import e from '../img/5.jpg';
+import pic1 from '../img/pic1.jpg'
 import '../styles/home.css';
 
 
@@ -7,7 +7,10 @@ function Home() {
     return(
         <>
         <section>
-            <div><img src={home} alt="pic 1" className='topimg'/></div>
+            <div className="image-container">
+                <img src={pic1} alt="pic 1" className='topimg'/>
+                <h1 className="heading">WELCOME TO <br /> AFRONIA TOURS</h1>
+            </div>
             <div className="aboutUs">
                 <div>
                     <h1>Who Are We?</h1>

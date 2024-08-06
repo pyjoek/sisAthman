@@ -1,3 +1,4 @@
+
 // styles
 import './App.css';
 import './styles/conts.css'
@@ -9,6 +10,7 @@ import Home from './comp/home';
 import Safari from './comp/safari';
 import Kilimanjaro from './comp/kilimanjaro';
 import Island from './comp/island';
+import Gallery from './comp/gallery';
 // bottom icons
 import home from './img/icons/home.png';
 import safari from './img/icons/safariicon.png';
@@ -37,6 +39,10 @@ function App() {
     <section>
       <nav className="top">
             <img src={logo} alt="" />
+            <div className='contacts'>
+              <h2><b>AFRONIA TOURS</b></h2>
+              <button className="btn" onClick={togglePopup}><img src={menu} alt="menu" /></button>
+            </div>
         </nav>
 
       {body}
@@ -82,7 +88,10 @@ function App() {
         <button className="btn mine" onClick={() => {
           if (body !== <Island/>) {setBody(<Island/>);}}}><div><img src={island} alt="island" /><p>Island</p></div></button>
 
-        <button className="btn mine menu" onClick={togglePopup}><img src={menu} alt="menu" /><p>Menu</p></button>
+        <button className="btn mine" onClick={() => {
+          if (body !== <Gallery/>) {setBody(<Gallery/>);}}}><div><img src={island} alt="gallery" /><p>Gallery</p></div></button>
+
+        {/* <button className="btn mine menu" onClick={togglePopup}><img src={menu} alt="menu" /><p>Menu</p></button> */}
       </nav>
       
     </section>
