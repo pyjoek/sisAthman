@@ -39,7 +39,6 @@ function Island() {
 
       <div className="itinerary-container">
         <h1>2 Nights Mnazi Bay Adventure</h1>
-        <p><strong>Price per person:</strong> TZS 370,000/=</p>
 
         <div className="row">
             <div className="day col-sm-12 col-md-6">
@@ -69,7 +68,6 @@ function Island() {
       
     <div className="itinerary-container">
     <h1>3 Days Nights Mnazi Bay Adventure</h1>
-    <p><strong>Price per person:</strong> TZS 495,000/=</p>
 
     <div className="row">
         <div className="day col-sm-12 col-md-6">

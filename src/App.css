@@ -84,3 +84,18 @@
   width: 60px;
   height: 60px;
 }
+
+nav.top {
+  padding: 0 20px; /* Add padding on the left and right sides */
+  height: 60px; /* Adjust as needed */
+}
+
+.contacts h2 {
+  margin-right: 20px; /* Space between the text and button */
+}
+
+.contacts .btn {
+  background: none; /* Optional: To remove default button styling */
+  border: none;
+  padding: 0;
+}

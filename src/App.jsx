@@ -37,13 +37,16 @@ function App() {
   
   return (
     <section>
-      <nav className="top">
-            <img src={logo} alt="" />
-            <div className='contacts'>
-              <h2><b>AFRONIA TOURS</b></h2>
-              <button className="btn" onClick={togglePopup}><img src={menu} alt="menu" /></button>
-            </div>
-        </nav>
+      <nav className="top d-flex justify-content-between align-items-center">
+        <img src={logo} alt="" />
+        <div className="contacts d-flex justify-content-between align-items-center">
+            <h2><b>AFRONIA TOURS</b></h2>
+            <button className="btn" onClick={togglePopup}>
+                <img src={menu} alt="menu" />
+            </button>
+        </div>
+    </nav>
+
 
       {body}
 

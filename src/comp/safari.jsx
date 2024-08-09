@@ -98,8 +98,7 @@ function Safari() {
             </section>
 
             <div className="itinerary-container">
-            <h1>3 Days / 2 Nights Ngorongoro Safari</h1>
-            <p><strong>Price per person:</strong> $[Insert Price Here]</p>
+            <h1>3 Days Nights Ngorongoro Safari</h1>
 
             <div className='row'>
                 <div className="day col-sm-12 col-md-4">
