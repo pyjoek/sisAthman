@@ -74,7 +74,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white; /* Or any color that contrasts with the image */
-    font-size: 3em; /* Adjust size as needed */
+    font-size: 4em; /* Adjust size as needed */
     font-weight: bold; /* Optional: for emphasis */
     margin: 0;
+    font-family: 'tribeca';
 }

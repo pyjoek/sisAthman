@@ -1,4 +1,5 @@
 import '../styles/safari.css';
+import '../styles/Itinerary.css';
 import wildlife from '../img/wildlife.webp';
 
 function Safari() {
@@ -36,7 +37,7 @@ function Safari() {
                     villages to experience local traditions, and explore amazing historical sites like the 
                     Olduvai Gorge – the “Cradle of Mankind”. For a unique perspective, try a walking safari 
                     through the savannah for close encounters with nature. Feeling even more adventurous? Soar 
-                    above in a hot air balloon and enjoy scenic beauty from bird's-eye view. Altezza offers these 
+                    above in a hot air balloon and enjoy scenic beauty from bird's-eye view. Afronia Tours offers these 
                     and other off-the-beaten-path experiences to enrich your safari adventure.
                 </p>
             </section>
@@ -44,7 +45,7 @@ function Safari() {
             <section className="mb-5">
                 <h2 className="mb-3">What animals you will see on Tanzania safari?</h2>
                 <p>In Tanzania, the allure of spotting the <a href="https://altezza.travel/upload/medialibrary/4f5/spn6zvn48ntlppwd3y0husljvqtc88tp.webp" target="_blank" rel="noopener noreferrer">'Big Five'</a> — lions, leopards, buffaloes, rhinos, and elephants—draws many to its safaris. While rhinos are rare in East Africa, they can still be spotted, especially in the Ngorongoro Crater. The other Big Five members are plentiful, promising exciting sightings.</p>
-                <p>But there's more than the Big Five. Tanzania teems with wildlife like cheetahs, wildebeests, zebras, and monkeys. Bird lovers will be thrilled by the 1,156 bird species, including over 800 resident and hundreds of migratory species, best seen from December to April. At Altezza Travel, we have many passionate birders who are absolutely delighted with the diversity of avian life in Tanzania.
+                <p>But there's more than the Big Five. Tanzania teems with wildlife like cheetahs, wildebeests, zebras, and monkeys. Bird lovers will be thrilled by the 1,156 bird species, including over 800 resident and hundreds of migratory species, best seen from December to April. At Afronia Tours Travel, we have many passionate birders who are absolutely delighted with the diversity of avian life in Tanzania.
                 </p>
                 <img src="https://altezza.travel/upload/medialibrary/4f5/spn6zvn48ntlppwd3y0husljvqtc88tp.webp" className="img-fluid rounded" alt="A variety of wildlife in Tanzania" />
                 <h2 className="mt-4">Visa for Tanzania</h2>
@@ -64,7 +65,7 @@ function Safari() {
             <section className="mb-5">
                 <h2 className="mb-3">Tanzania Safari camps and lodges</h2>
                 <p>Tanzania safaris are not just about wilderness adventures. The lodges where you stay play a big part in the experience too. Picture enjoying a drink on a terrace, overlooking the sprawling savannah – it's quintessential safari.</p>
-                <p>At Altezza, choosing the right lodges for our Tanzania safari tours is key. We scrutinize everything from room quality to staff professionalism and menu variety. Our team personally visits each lodge to ensure they match our high standards.</p>
+                <p>At Afronia TOurs, choosing the right lodges for our Tanzania safari tours is key. We scrutinize everything from room quality to staff professionalism and menu variety. Our team personally visits each lodge to ensure they match our high standards.</p>
                 <p>The location of lodges is vital. We pick lodges and camps for their stunning views, both from guest rooms and communal areas. Whether in the Serengeti, near the Ngorongoro Crater, or by Lake Manyara, you'll always feel immersed in the savannah's spirit.</p>
                <img src="https://cloudfront.safaribookings.com/blog/2021/11/00-top-10-best-tanzania-safari-lodges-camps-BW-header1200px.jpg"
                  className="img-fluid rounded" alt="Safari vehicle in Tanzania" />
@@ -95,6 +96,36 @@ function Safari() {
                 <img src="https://travelguide.co.tz/wp-content/uploads/2018/04/Marc-Mol_3_small.jpg"
                  className="img-fluid rounded" alt="Safari vehicle in Tanzania" />
             </section>
+
+            <div className="itinerary-container">
+            <h1>3 Days / 2 Nights Ngorongoro Safari</h1>
+            <p><strong>Price per person:</strong> $[Insert Price Here]</p>
+
+            <div className='row'>
+                <div className="day col-sm-12 col-md-4">
+                    <h2>Day 1: Arrival Day</h2>
+                    <p>
+                    Arrival from Dar es Salaam to Arusha Airport. Transfer to Summit Lodge in Arusha or Farm Lodge Karatu.
+                    Optional day trip to Napuru Waterfalls or visit Ngaresero Camping.
+                    Later, transfer back to the lodge for relaxation, dinner, and overnight.
+                    </p>
+                </div>
+                <div className="day col-sm-12 col-md-4">
+                    <h2>Day 2: Arusha - Ngorongoro</h2>
+                    <p>
+                    Start with breakfast followed by a game drive around the Ngorongoro Conservation Area. Visit a Maasai Boma and experience
+                    one of the most beautiful game drives.
+                    </p>
+                </div>
+                <div className="day col-sm-12 col-md-4">
+                    <h2>Day 3: Arusha - Ngorongoro Crater</h2>
+                    <p>
+                    Descend into the crater for a tour in the afternoon. Afterward, ascend from the crater and head towards Arusha to the airport
+                    for your departure.
+                    </p>
+                </div>
+            </div>
+            </div>
         </main>
     );
 }
