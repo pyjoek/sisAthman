@@ -1,0 +1,65 @@
+.button-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .send-button {
+    background-color: #ff8c00; /* Orange color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    flex: 1;
+  }
+  
+  .whatsapp-button {
+    background-color: #25D366; /* WhatsApp green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    flex: 1;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #1EBE57;
+  }
+  
+  .booking-form {
+    background: white; 
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);  */
+    border-radius: 8px; 
+    padding: 16px; 
+    max-width: 400px; 
+    margin: auto;
+  }
+  
+    /* max-height: 500px; /* Adjust based on your pop-up size */
+    /* overflow-y: auto; */ 
+/* Style for input fields */
+input[type="text"], input[type="email"], input[type="number"], textarea {
+  border: none;
+  border-bottom: 2px solid orange; /* Orange bottom border */
+  background-color: transparent; /* Optional for transparent background */
+  outline: none; /* Remove default outline on focus */
+  color: black; /* Text color */
+}
+
+/* Style for placeholder */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="number"]::placeholder,
+select::placeholder,
+textarea::placeholder {
+  color: black; /* Black placeholder text */
+  opacity: 1; /* Ensures full black color in all browsers */
+}
+
+/* Add focus effect if desired */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  border-bottom: 2px solid darkorange; /* Darker border on focus */
+}

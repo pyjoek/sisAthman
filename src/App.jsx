@@ -7,6 +7,7 @@ import logo from './img/icons/afronia.png'
 // pages
 import { useState, useEffect } from 'react';
 import Home from './comp/home';
+import BookingForm from './comp/form'
 import Safari from './comp/safari';
 import Kilimanjaro from './comp/kilimanjaro';
 import Island from './comp/island';
@@ -16,13 +17,13 @@ import home from './img/icons/home.png';
 import safari from './img/icons/safariicon.png';
 import kili from './img/icons/kiliicon.png';
 import island from './img/icons/islandicon.png';
-import menu from './img/icons/menuicon.png';
+import menu from './img/icons/contacts.png';
 // menu icons
-import wa from './img/icons/wa.jpeg'
-import fb from './img/icons/fb.png'
-import ig from './img/icons/ig.webp'
-import mail from './img/icons/em.jpg'
-import lp from './img/icons/lp.png'
+// import wa from './img/icons/wa.jpeg'
+// import fb from './img/icons/fb.png'
+// import ig from './img/icons/ig.webp'
+// import mail from './img/icons/em.jpg'
+// import lp from './img/icons/lp.png'
 
 function App() {
   const [body, setBody] = useState(<Home />);
@@ -42,7 +43,9 @@ function App() {
         <div className="contacts d-flex justify-content-between align-items-center">
             <h2><b>AFRONIA TOURS</b></h2>
             <button className="btn" onClick={togglePopup}>
-                <img src={menu} alt="menu" />
+                {/* <img src={menu} alt="menu" /> */}
+                <img src={menu} alt="menu" style={{ width: '24px', height: '24px' }} />
+
             </button>
         </div>
     </nav>
@@ -54,7 +57,7 @@ function App() {
         <div className="overlay"></div>
         <div className="content">
           <div className="close-btn">&times;</div>
-                <div className="icon">
+                {/* <div className="icon">
                 <div>
                     <p><a href="https://wa.me/+255769477422" target='_blank'><img src={wa} alt="" className='icons'/></a></p>
                 </div>
@@ -74,7 +77,8 @@ function App() {
                 </div>
                 <div>
                     <p><img src={lp} alt="" className='icons'/><a href="#">Arusha, Tanzania</a></p>
-                </div>
+                </div> */}
+                <BookingForm/>
             </div>
       </div>
 
