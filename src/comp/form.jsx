@@ -25,7 +25,7 @@ function BookingForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const email = "joelcyber3@gmail.com";
+    const email = "info@afroniatours.co.tz";
     const subject = "Tour Booking Request";
     const body = `Hello, I would like to book a tour with the following details:
     - Name: ${formData.name}
@@ -41,7 +41,7 @@ function BookingForm() {
     window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
-  const whatsappNumber = "+255715538630";
+  const whatsappNumber = "+255769477422";
   const defaultMessage = `Hello, I'm interested in booking a tour. `;
 // - Name: ${formData.name}
 // - Email: ${formData.email}
@@ -126,31 +126,15 @@ function BookingForm() {
           />
         </div>
         <div className="form-group mb-2">
-          <select
+          <input
+            type="text"
             name="budget"
-            className="form-select form-select-sm"
+            placeholder="Your Budget"
+            className="form-control form-control-sm"
             value={formData.budget}
             onChange={handleChange}
             required
-          >
-            <option value="">My Budget - $0 - 1</option>
-            <option value="0-1">$0 - 1</option>
-            <option value="1-5">$1 - 5</option>
-            <option value="5-10">$5 - 10</option>
-          </select>
-        </div>
-        <div className="form-group mb-2">
-          <select
-            name="accommodation"
-            className="form-select form-select-sm"
-            value={formData.accommodation}
-            onChange={handleChange}
-            required
-          >
-            <option value="">Budget Accommodation</option>
-            <option value="standard">Standard</option>
-            <option value="luxury">Luxury</option>
-          </select>
+          />
         </div>
         <div className="form-group mb-2">
           <textarea
