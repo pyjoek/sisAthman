@@ -36,8 +36,33 @@ const SafariBookingForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission, e.g., send data to an API
-    console.log(formData);
+    const email = "info@afroniatours.co.tz"; // Recipient's email address
+    const subject = "Tour Booking Request"; // Email subject
+    const body = `Hello, I would like to book a tour with the following details:
+    - Name: ${formData.fullName}
+    - Email: ${formData.email}
+    - Phone Number: ${formData.phoneNumber}
+    - Nationality: ${formData.nationality}
+    - Date of Birth: ${formData.dateOfBirth}
+    - Preferred Dates: ${formData.preferredDates}
+    - Number of Travelers (Adults): ${formData.numberOfTravelers}
+    - Number of Children: ${formData.numberOfChildren}
+    - Type of Safari: ${formData.safariType}
+    - Type of Accommodation: ${formData.accommodationType}
+    - Room Preferences: ${formData.roomPreferences}
+    - Special Requests: ${formData.specialRequests}
+    - Preferred Activities: ${formData.preferredActivities}
+    - Special Experiences: ${formData.specialExperiences}
+    - Arrival Details: ${formData.arrivalDetails}
+    - Departure Details: ${formData.departureDetails}
+    - Dietary Restrictions: ${formData.dietaryRestrictions}
+    - Emergency Contact Name: ${formData.emergencyContactName}
+    - Emergency Contact Relationship: ${formData.emergencyContactRelationship}
+    - Emergency Contact Phone: ${formData.emergencyContactPhone}
+    - Additional Notes: ${formData.additionalNotes}`;
+
+    // Redirect to the user's email client
+    window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   return (
