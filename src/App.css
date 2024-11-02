@@ -1,56 +1,112 @@
+/* General app container */
 .App {
   text-align: center;
 }
 
-.navy button img {
-    width: 30px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+/* Navigation bar */
+.navy {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
+/* Button styling */
+.navy button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  flex: 1;
+}
+
+/* Button images */
+.navy button img {
+  width: 30px; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Button text */
 .navy button p {
   font-size: 12px;
+  color: #333; /* Adjust text color if needed */
 }
 
-.mine{
+/* Custom background color for buttons */
+.mine {
   background-color: #ffffff;
-
 }
-.navy .home{
+
+/* Specific styling for 'home' icon */
+.navy .home {
   width: 15px;
 }
 
+/* Top navigation bar */
 .top {
-  /* position: fixed; */
   z-index: 1000;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Left and right padding */
+  height: 60px; /* Adjust as needed */
+  background-color: #fff; /* Background color */
+  border-bottom: 1px solid #ddd; /* Optional: adds a border at the bottom */
 }
 
+/* Top navigation title */
 .top h2 {
   font-size: 20px;
   margin-top: 1rem;
   margin-left: 2rem;
 }
 
+/* Logo image */
 .top img {
   width: 60px;
   height: 60px;
-  float: left; 
-  display: flex; 
+  float: left;
+  display: flex;
   justify-content: flex-end;
   flex-direction: row;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Contacts section */
+.top .contacts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Contacts image styling */
+.contacts img {
+  width: 60px;
+  height: 60px;
 }
 
+/* Padding for top navigation */
+nav.top {
+  padding: 0 20px; /* Left and right padding */
+  height: 40px;
+}
+
+/* Contacts section title */
+.contacts h2 {
+  margin-right: 20px; /* Spacing between text and button */
+}
+
+/* Button inside contacts section */
+.contacts .btn {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* App header styling */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -62,10 +118,12 @@
   color: white;
 }
 
+/* Links */
 .App-link {
   color: #61dafb;
 }
 
+/* Animation */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -75,27 +133,56 @@
   }
 }
 
-.top .contacts {
-  display: flex;
-  flex-direction: row;
+/* Responsive adjustments */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-.contacts img {
-  width: 60px;
-  height: 60px;
+@media (max-width: 768px) {
+  .navy button img {
+    width: 24px; /* Resize icons on smaller screens */
+  }
+
+  .navy button p {
+    font-size: 10px; /* Resize text on smaller screens */
+  }
+
+  .top h2 {
+    font-size: 18px; /* Smaller font for mobile screens */
+  }
 }
 
-nav.top {
-  padding: 0 20px; /* Add padding on the left and right sides */
-  height: 60px; /* Adjust as needed */
+.navbar-nav h2 {
+  margin: 0; /* Reset margins */
+  font-size: 16px; /* Default font size */
 }
 
-.contacts h2 {
-  margin-right: 20px; /* Space between the text and button */
+@media (max-width: 768px) {
+  .navbar-nav h2 {
+    display: none; /* Hide headings on small screens */
+  }
 }
 
-.contacts .btn {
-  background: none; /* Optional: To remove default button styling */
-  border: none;
-  padding: 0;
+.logo-container {
+  display: flex;              /* Use flexbox layout */
+  flex-direction: row;     /* Stack items vertically */
+  align-items: center;        /* Center items horizontally */
+  justify-content: center;    /* Center items vertically */
+  text-align: center;         /* Center text within the container */
+}
+
+.book-now-link {
+  text-decoration: none;     /* Use the current text color */
+}
+
+.navy img {
+  width: 20px; /* Set the width of the icons */
+  height: 20px; /* Set the height of the icons */
+  /* You can also maintain aspect ratio by using height: auto; */
+}
+
+.navy p {
+  font-size: 12px; /* Adjust the font size for labels */
 }
