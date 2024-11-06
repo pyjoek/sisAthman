@@ -90,7 +90,7 @@ const images = [
 const Gallery = () => {
     return (
         <div className="gallery-container">
-            <h1>Tour Gallery</h1>
+            <h1 className="mt-4">Tour Gallery</h1>
             <div className="gallery">
                 {images.map((image, index) => (
                     <div key={index} className="gallery-item">

@@ -7,7 +7,7 @@ function Island() {
   return (
     <div className='conts'>
       <header>
-        <h1>Welcome to Zanzibar</h1>
+        <h1 className="mt-4">Welcome to Zanzibar</h1>
       </header>
       <section className="spice-tour">
         <img src={spice} alt="" className='spice img-fluid mx-auto d-block'/>

@@ -3,7 +3,7 @@ import "../styles/kili.css"
 function Kilimanjaro() {
     return(
         <main>
-                <h1>Mount Kilimanjaro</h1>
+                <h1 className="mt-4">Mount Kilimanjaro</h1>
             <img className="images" src="https://files.worldwildlife.org/wwfcmsprod/images/kilimanjaro_facts_travel_blog/blog_show/5d7xnq6x77_1203668448_73.jpg" alt="Mount kilimanjaro" /> <br />
             <div>
                 <p>

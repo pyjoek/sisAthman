@@ -43,15 +43,6 @@ function BookingForm() {
 
   const whatsappNumber = "+255769477422";
   const defaultMessage = `Hello, I'm interested in booking a tour. `;
-// - Name: ${formData.name}
-// - Email: ${formData.email}
-// - Travel Date: ${formData.travelDate}
-// - Nationality: ${formData.nationality}
-// - Number of People: ${formData.numberOfPeople}
-// - Number of Days: ${formData.numberOfDays}
-// - Budget: ${formData.budget}
-// - Accommodation: ${formData.accommodation}
-// - Special Requests: ${formData.specialRequest}`;
 
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(defaultMessage)}`;
 

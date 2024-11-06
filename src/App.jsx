@@ -19,12 +19,18 @@ import home from './img/icons/home.png';
 import safari from './img/icons/safariicon.png';
 import kili from './img/icons/kiliicon.png';
 import island from './img/icons/islandicon.png';
-import menu from './img/icons/contacts.png';
+import menu from './img/icons/image.png';
+// import menu from './img/icons/contacts.png';
 
 function App() {
   const togglePopup = () => {
     document.getElementById("popup-1").classList.toggle("active");
   };
+
+  const whatsappNumber = "+255769477422";
+  const defaultMessage = `Hello, I'm interested in booking a tour. `;
+
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(defaultMessage)}`;
 
   return (
     <Router>
@@ -37,12 +43,13 @@ function App() {
             </Link>
           </div>
           <div className="contacts d-flex justify-content-between align-items-center">
-            <h2><b>PLAN YOUR TRIP</b></h2>
             <Link to="/booking" className="book-now-link">
               <h2><b>BOOK NOW</b></h2>
             </Link>
-            <button className="btn" onClick={togglePopup}>
-              <img src={menu} alt="menu" style={{ width: '24px', height: '24px' }} />
+            {/* <button className="btn" onClick={togglePopup}> */}
+            <button className="btn">
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-success btn-sm">
+              <img src={menu} alt="menu" style={{ width: '24px', height: '24px' }} /></a>
             </button>
           </div>
         </nav>
