@@ -65,7 +65,10 @@ const Gallery = () => {
 
     useEffect(() => {
         if (!showPhotos) {
-            document.querySelectorAll('video').forEach(video => video.play());
+            document.querySelectorAll('video').forEach(video => {
+                video.muted = true;
+                video.play();
+            });
         }
     }, [showPhotos]);
 
@@ -87,7 +90,7 @@ const Gallery = () => {
                 <div className="gallery">
                     {videos.map((video, index) => (
                         <div key={index} className="gallery-item">
-                            <video width="320" height="240" controls autoPlay>
+                            <video width="320" height="240" controls autoPlay muted>
                                 <source src={video.src} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
