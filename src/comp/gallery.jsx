@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/gallery.css';
 
 // Import all images
@@ -43,61 +43,58 @@ import img38 from '../img/gallery/38.jpeg';
 import img39 from '../img/gallery/39.jpeg';
 import img40 from '../img/gallery/40.jpeg';
 
-// Array of images
-const images = [
-    { src: img1, alt: 'Tour Image 1' },
-    { src: img2, alt: 'Tour Image 2' },
-    { src: img3, alt: 'Tour Image 3' },
-    { src: img4, alt: 'Tour Image 4' },
-    { src: img5, alt: 'Tour Image 5' },
-    { src: img6, alt: 'Tour Image 6' },
-    { src: img7, alt: 'Tour Image 7' },
-    { src: img8, alt: 'Tour Image 8' },
-    { src: img9, alt: 'Tour Image 9' },
-    { src: img10, alt: 'Tour Image 10' },
-    { src: img11, alt: 'Tour Image 11' },
-    { src: img12, alt: 'Tour Image 12' },
-    { src: img13, alt: 'Tour Image 13' },
-    { src: img14, alt: 'Tour Image 14' },
-    { src: img15, alt: 'Tour Image 15' },
-    { src: img16, alt: 'Tour Image 16' },
-    { src: img17, alt: 'Tour Image 17' },
-    { src: img18, alt: 'Tour Image 18' },
-    { src: img19, alt: 'Tour Image 19' },
-    { src: img20, alt: 'Tour Image 20' },
-    { src: img21, alt: 'Tour Image 21' },
-    { src: img22, alt: 'Tour Image 22' },
-    { src: img23, alt: 'Tour Image 23' },
-    { src: img24, alt: 'Tour Image 24' },
-    { src: img25, alt: 'Tour Image 25' },
-    { src: img26, alt: 'Tour Image 26' },
-    { src: img27, alt: 'Tour Image 27' },
-    { src: img28, alt: 'Tour Image 28' },
-    { src: img29, alt: 'Tour Image 29' },
-    { src: img30, alt: 'Tour Image 30' },
-    { src: img31, alt: 'Tour Image 31' },
-    { src: img32, alt: 'Tour Image 32' },
-    { src: img33, alt: 'Tour Image 33' },
-    { src: img34, alt: 'Tour Image 34' },
-    { src: img35, alt: 'Tour Image 35' },
-    { src: img36, alt: 'Tour Image 36' },
-    { src: img37, alt: 'Tour Image 37' },
-    { src: img38, alt: 'Tour Image 38' },
-    { src: img39, alt: 'Tour Image 39' },
-    { src: img40, alt: 'Tour Image 40' },
-];
+// Import all videos
+import vid1 from '../videos/1.mp4';
+import vid2 from '../videos/2.mp4';
+import vid3 from '../videos/3.mp4';
+import vid4 from '../videos/4.mp4';
+import vid5 from '../videos/5.mp4';
+import vid6 from '../videos/6.mp4';
+import vid7 from '../videos/7.mp4';
+import vid8 from '../videos/8.mp4';
+import vid9 from '../videos/9.mp4';
+import vid10 from '../videos/10.mp4';
+import vid11 from '../videos/11.mp4';
+import vid12 from '../videos/12.mp4';
+
+const images = Array.from({ length: 40 }, (_, i) => ({ src: require(`../img/gallery/${i + 1}.jpeg`), alt: `Tour Image ${i + 1}` }));
+const videos = Array.from({ length: 12 }, (_, i) => ({ src: require(`../videos/${i + 1}.mp4`), alt: `Tour Video ${i + 1}` }));
 
 const Gallery = () => {
+    const [showPhotos, setShowPhotos] = useState(true);
+
+    useEffect(() => {
+        if (!showPhotos) {
+            document.querySelectorAll('video').forEach(video => video.play());
+        }
+    }, [showPhotos]);
+
     return (
         <div className="gallery-container">
             <h1 className="mt-4">Tour Gallery</h1>
-            <div className="gallery">
-                {images.map((image, index) => (
-                    <div key={index} className="gallery-item">
-                        <img src={image.src} alt={image.alt} />
-                    </div>
-                ))}
-            </div>
+            <button onClick={() => setShowPhotos(!showPhotos)} className="btn btn-primary">
+                {showPhotos ? 'Show Videos' : 'Show Photos'}
+            </button>
+            {showPhotos ? (
+                <div className="gallery">
+                    {images.map((image, index) => (
+                        <div key={index} className="gallery-item">
+                            <img src={image.src} alt={image.alt} />
+                        </div>
+                    ))}
+                </div>
+            ) : (
+                <div className="gallery">
+                    {videos.map((video, index) => (
+                        <div key={index} className="gallery-item">
+                            <video width="320" height="240" controls autoPlay>
+                                <source src={video.src} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    ))}
+                </div>
+            )}
         </div>
     );
 }
