@@ -20,6 +20,7 @@ import safari from './img/icons/safariicon.png';
 import kili from './img/icons/kiliicon.png';
 import island from './img/icons/islandicon.png';
 import menu from './img/icons/image.png';
+import gallery from './img/icons/gallery.png';
 // import menu from './img/icons/contacts.png';
 
 function App() {
@@ -35,24 +36,34 @@ function App() {
   return (
     <Router>
       <section>
-        <nav className="top d-flex justify-content-between align-items-center">
-          <div className='logo-container'>
-            <img src={logo} alt="" />
-            <Link to="/">
-              <h2><b>AFRONIA TOURS</b></h2>
-            </Link>
-          </div>
-          <div className="contacts d-flex justify-content-between align-items-center">
-            <Link to="/booking" className="book-now-link">
-              <h2><b>BOOK NOW</b></h2>
-            </Link>
-            {/* <button className="btn" onClick={togglePopup}> */}
-            <button className="btn">
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-success btn-sm">
-              <img src={menu} alt="menu" style={{ width: '24px', height: '24px' }} /></a>
-            </button>
-          </div>
-        </nav>
+        <div className="toppers">
+          <nav className="top d-flex justify-content-between align-items-center">
+            <div className='logo-container'>
+              <img src={logo} alt="" />
+              <Link to="/">
+                <h2><b className='text-white'>AFRONIA TOURS</b></h2>
+              </Link>
+            </div>
+            <div className="contacts d-flex justify-content-between align-items-center">
+              <Link to="/booking" className="book-now-link text-white">
+                <h2><b className='text-white'>BOOK NOW</b></h2>
+              </Link>
+              {/* <button className="btn" onClick={togglePopup}> */}
+              <button className="btn">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-success btn-sm">
+                <img src={menu} alt="menu" style={{ width: '24px', height: '24px' }} /></a>
+              </button>
+            </div>
+          </nav>
+
+          <nav className="navy">
+            <Link to="/" className="btn home"><div><img  src={home} alt="Home" /><p className='text-white'>Home</p></div></Link>
+            <Link to="/safari" className="btn mine"><div><img src={safari} alt="safari" /><p className='text-white'>Safari</p></div></Link>
+            <Link to="/kilimanjaro" className="btn mine"><div><img src={kili} alt="kili" /><p className='text-white'>Kilimanjaro</p></div></Link>
+            <Link to="/island" className="btn mine"><div><img src={island} alt="island" /><p className='text-white'>Island</p></div></Link>
+            <Link to="/gallery" className="btn mine"><div><img src={gallery} alt="gallery" /><p className='text-white'>Gallery</p></div></Link>
+          </nav>
+        </div>
 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -71,13 +82,6 @@ function App() {
           </div>
         </div>
 
-        <nav className="navy">
-          <Link to="/" className="btn mine"><div><img className="home" src={home} alt="Home" /><p>Home</p></div></Link>
-          <Link to="/safari" className="btn mine"><div><img src={safari} alt="safari" /><p>Safari</p></div></Link>
-          <Link to="/kilimanjaro" className="btn mine"><div><img src={kili} alt="kili" /><p>Kilimanjaro</p></div></Link>
-          <Link to="/island" className="btn mine"><div><img src={island} alt="island" /><p>Island</p></div></Link>
-          <Link to="/gallery" className="btn mine"><div><img src={island} alt="gallery" /><p>Gallery</p></div></Link>
-        </nav>
       </section>
     </Router>
   );

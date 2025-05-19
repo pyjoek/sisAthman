@@ -9,7 +9,7 @@ function Home() {
         <section>
             <div className="image-container">
                 <img src={pic1} alt="pic 1" className='topimg'/>
-                <h1 className="heading">WELCOME TO <br /> AFRONIA TOURS</h1>
+                <h1 className="heading">WELCOME TO AFRONIA TOURS</h1>
             </div>
             <div className="aboutUs">
                 <div>
