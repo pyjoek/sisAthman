@@ -1,16 +1,32 @@
 import e from '../img/5.jpg';
 import pic1 from '../img/pic1.jpg'
 import '../styles/home.css';
+import '../styles/scrollable.css';
 
 
 function Home() {
     return(
         <>
         <section>
-            <div className="image-container">
+            {/* <div className="image-container">
                 <img src={pic1} alt="pic 1" className='topimg'/>
                 <h1 className="heading">WELCOME TO AFRONIA TOURS</h1>
+            </div> */}
+            <div className="slider">
+                <div className="slide-track">
+                    <div className="slide"><img src={pic1} alt="pic 1" className="topimg" /></div>
+                    <div className="slide"><img src={pic1} alt="pic 2" className="topimg" /></div>
+                    <div className="slide"><img src={pic1} alt="pic 3" className="topimg" /></div>
+                    <div className="slide"><img src={pic1} alt="pic 4" className="topimg" /></div>
+
+                    <div className="slide"><img src={pic1} alt="pic 1" className="topimg" /></div>
+                    <div className="slide"><img src={pic1} alt="pic 2" className="topimg" /></div>
+                    <div className="slide"><img src={pic1} alt="pic 3" className="topimg" /></div>
+                    <div className="slide"><img src={pic1} alt="pic 4" className="topimg" /></div>
+                </div>
+                <h1 className="heading">WELCOME TO AFRONIA TOURS</h1>
             </div>
+
             <div className="aboutUs">
                 <div>
                     <h1>Who Are We?</h1>
