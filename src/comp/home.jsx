@@ -1,5 +1,10 @@
 import e from '../img/5.jpg';
 import pic1 from '../img/pic1.jpg'
+import pic2 from '../img/2.jpg';
+import pic3 from '../img/3.jpg';
+import pic4 from '../img/4.jpg';
+import pic5 from '../img/5.jpg';
+import pic6 from '../img/6.webp';
 import '../styles/home.css';
 import '../styles/scrollable.css';
 
@@ -15,14 +20,11 @@ function Home() {
             <div className="slider">
                 <div className="slide-track">
                     <div className="slide"><img src={pic1} alt="pic 1" className="topimg" /></div>
-                    <div className="slide"><img src={pic1} alt="pic 2" className="topimg" /></div>
-                    <div className="slide"><img src={pic1} alt="pic 3" className="topimg" /></div>
-                    <div className="slide"><img src={pic1} alt="pic 4" className="topimg" /></div>
-
-                    <div className="slide"><img src={pic1} alt="pic 1" className="topimg" /></div>
-                    <div className="slide"><img src={pic1} alt="pic 2" className="topimg" /></div>
-                    <div className="slide"><img src={pic1} alt="pic 3" className="topimg" /></div>
-                    <div className="slide"><img src={pic1} alt="pic 4" className="topimg" /></div>
+                    <div className="slide"><img src={pic2} alt="pic 2" className="topimg" /></div>
+                    <div className="slide"><img src={pic3} alt="pic 3" className="topimg" /></div>
+                    <div className="slide"><img src={pic4} alt="pic 4" className="topimg" /></div>
+                    <div className="slide"><img src={pic5} alt="pic 1" className="topimg" /></div>
+                    <div className="slide"><img src={pic6} alt="pic 2" className="topimg" /></div>
                 </div>
                 <h1 className="heading">WELCOME TO AFRONIA TOURS</h1>
             </div>
