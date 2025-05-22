@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import e from '../img/5.jpg';
 import pic1 from '../img/pic1.jpg'
 import pic2 from '../img/2.jpg';
@@ -7,9 +8,17 @@ import pic5 from '../img/5.jpg';
 import pic6 from '../img/6.webp';
 import '../styles/home.css';
 import '../styles/scrollable.css';
+import SafariBookingForm from './booking';
 
 
 function Home() {
+    const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/booking');
+  };
+
+
     return(
         <>
         <section>
@@ -26,7 +35,14 @@ function Home() {
                     <div className="slide"><img src={pic5} alt="pic 1" className="topimg" /></div>
                     <div className="slide"><img src={pic6} alt="pic 2" className="topimg" /></div>
                 </div>
-                <h1 className="heading">WELCOME TO AFRONIA TOURS</h1>
+                    
+                <div className="heading">
+                    <h1 >Time for your next adventure</h1>
+                    <h4 >let us plan it for you</h4>
+                    <button className="btn" onClick={handleClick} style={{ backgroundColor: 'rgb(209, 206, 124)' }}>
+                        Book Now
+                    </button>
+                </div>
             </div>
 
             <div className="aboutUs">
@@ -34,11 +50,13 @@ function Home() {
                     <h1>Who Are We?</h1>
                     <hr />
                     <div className="ourstory">
-                        Welcome to Afronia Tours, your ultimate destination for unforgettable adventures
-                        in Tanzania. As a premier tour operator in East Africa, we specialize in providing
-                        top-notch services for safari excursions, Mount Kilimanjaro trekking expeditions,
-                        Zanzibar holidays, marine tourism experiences, balloon safaris, Serengeti wildlife
-                        encounters, immigration assistance, and bird watching tours.
+                        Welcome to Afronia Tours, your gateway to discovering the vibrant beauty and rich 
+                        cultures of Africa with ease and confidence. At Afronia Tours, we are passionate 
+                        about crafting seamless, unforgettable travel experiences that bring the continent’s 
+                        breathtaking landscapes, diverse traditions, and hidden gems right to your doorstep. 
+                        Whether you're seeking thrilling safaris, cultural adventures, or tranquil escapes, 
+                        our expert team is dedicated to making your journey smooth, enjoyable, and truly 
+                        memorable—because travel with Afronia Tours is simply made easy.
                     </div>
                 </div>
 

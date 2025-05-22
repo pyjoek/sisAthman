@@ -4,7 +4,8 @@
 }
 
 .toppers{
-  background-color: #FFFDD0;
+  background-color: #ece98d;
+  /* background-color: #FFFDD0; */
   z-index: 1000;
   display: flex;
   flex-direction: column;

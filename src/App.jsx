@@ -41,14 +41,13 @@ function App() {
             <div className='logo-container'>
               <img src={logo} alt="" />
               <Link to="/">
-                <h2><b >AFRONIA TOURS</b></h2>
+                <h2 className='text-center'><b >AFRONIA TOURS</b></h2>
               </Link>
             </div>
             <div className="contacts d-flex justify-content-between align-items-center">
-              <Link to="/booking" className="book-now-link text-white">
+              {/* <Link to="/booking" className="book-now-link text-white">
                 <h2><b >BOOK NOW</b></h2>
-              </Link>
-              {/* <button className="btn" onClick={togglePopup}> */}
+              </Link> */}
               <button className="btn">
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-success btn-sm">
                 <img src={menu} alt="menu" style={{ width: '24px', height: '24px' }} /></a>

@@ -33,8 +33,12 @@
     margin-bottom: 5rem;
 }
 .aboutUs div {
-    text-align: center;
+    text-align: justify;
     margin: 1rem;
+}
+
+.aboutUs div h1, h2 {
+    text-align: center;
 }
 .aboutUs hr {
     width: 300px;
@@ -75,6 +79,7 @@
     color: white; /* Or any color that contrasts with the image */
     font-size: 2.5em; 
     font-family: 'tribeca';
+    text-align: center;
 }
 
 
