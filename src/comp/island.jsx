@@ -5,7 +5,7 @@ import '../styles/island.css'; // Import your custom CSS file
 
 function Island() {
   return (
-    <div className='conts'>
+    <div className='container'>
       <header>
         <h1 className="mt-4">Welcome to Zanzibar</h1>
       </header>

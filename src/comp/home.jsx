@@ -20,8 +20,7 @@ function Home() {
 
 
     return(
-        <>
-        <section>
+        <section className='container'>
             {/* <div className="image-container">
                 <img src={pic1} alt="pic 1" className='topimg'/>
                 <h1 className="heading">WELCOME TO AFRONIA TOURS</h1>
@@ -84,7 +83,7 @@ function Home() {
                             <h2>Waterfall</h2> 
                             Spend a day immersed in Tanzania’s beautiful 
                             nature on this waterfall hiking tour from Arusha. With a private guide, hike 
-                            to the foothills of the UNESCO-listed Mount Kilimanjaro where you find 
+             cont                to the foothills of the UNESCO-listed Mount Kilimanjaro where you find 
                             picturesque waterfalls and take a refreshing dip. Visit a local village to have 
                             lunch and learn about the local culture before ending with a tour of a coffee farm.
                         </p>
@@ -172,7 +171,6 @@ function Home() {
                 </div>
             </div>
         </section>
-        </>
     )
 }
 
