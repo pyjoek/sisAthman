@@ -1,0 +1,46 @@
+.safari-booking-form {
+    max-width: 600px;
+    /* margin: auto; */
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  .safari-booking-form label {
+    display: block;
+    margin: 0px 0 5px;
+  }
+  
+  .safari-booking-form input,
+  .safari-booking-form select,
+  .safari-booking-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .safari-booking-form button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .safari-booking-form button:hover {
+    background-color: #0056b3;
+  }
+
+  .booking-form {
+  max-height: 500px; /* Adjust the max height as needed */
+  overflow-y: auto;  /* Allows scrolling if content exceeds max height */
+  padding: 20px;     /* Padding for inner spacing */
+  border: 1px solid #ccc; /* Optional: border for better visibility */
+  border-radius: 10px; /* Optional: rounded corners */
+}

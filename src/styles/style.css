@@ -1,0 +1,25 @@
+.navy {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 6px;
+    padding-top: 5px;
+    height: 60px;
+    color: white;
+}
+
+.top {
+    width: 100%;
+    flex-direction: row;
+}
+
+.icons{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+.icon {
+    display: flex;
+    flex-direction: row;
+}
