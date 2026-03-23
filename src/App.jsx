@@ -1,5 +1,61 @@
 import { useState, useEffect, useRef } from "react";
 
+// ── Gallery Images (local imports) ─────────────────────────────────────────
+import img1 from './img/gallery/1.jpeg';
+import img2 from './img/gallery/2.jpeg';
+import img3 from './img/gallery/3.jpeg';
+import img4 from './img/gallery/4.jpeg';
+import img5 from './img/gallery/5.jpeg';
+import img6 from './img/gallery/6.jpeg';
+import img7 from './img/gallery/7.jpeg';
+import img8 from './img/gallery/8.jpeg';
+import img9 from './img/gallery/9.jpeg';
+import img10 from './img/gallery/10.jpeg';
+import img11 from './img/gallery/11.jpeg';
+import img12 from './img/gallery/12.jpeg';
+import img13 from './img/gallery/13.jpeg';
+import img14 from './img/gallery/14.jpeg';
+import img15 from './img/gallery/15.jpeg';
+import img16 from './img/gallery/16.jpeg';
+import img17 from './img/gallery/17.jpeg';
+import img18 from './img/gallery/18.jpeg';
+import img19 from './img/gallery/19.jpeg';
+import img20 from './img/gallery/20.jpeg';
+import img21 from './img/gallery/21.jpeg';
+import img22 from './img/gallery/22.jpeg';
+import img23 from './img/gallery/23.jpeg';
+import img24 from './img/gallery/24.jpeg';
+import img25 from './img/gallery/25.jpeg';
+import img26 from './img/gallery/26.jpeg';
+import img27 from './img/gallery/27.jpeg';
+import img28 from './img/gallery/28.jpeg';
+import img29 from './img/gallery/29.jpeg';
+import img30 from './img/gallery/30.jpeg';
+import img31 from './img/gallery/31.jpeg';
+import img32 from './img/gallery/32.jpeg';
+import img33 from './img/gallery/33.jpeg';
+import img34 from './img/gallery/34.jpeg';
+import img35 from './img/gallery/35.jpeg';
+import img36 from './img/gallery/36.jpeg';
+import img37 from './img/gallery/37.jpeg';
+import img38 from './img/gallery/38.jpeg';
+import img39 from './img/gallery/39.jpeg';
+import img40 from './img/gallery/40.jpeg';
+
+// ── Video Imports ──────────────────────────────────────────────────────────
+import vid1 from './videos/1.mp4';
+import vid2 from './videos/2.mp4';
+import vid3 from './videos/3.mp4';
+import vid4 from './videos/4.mp4';
+import vid5 from './videos/5.mp4';
+import vid6 from './videos/6.mp4';
+import vid7 from './videos/7.mp4';
+import vid8 from './videos/8.mp4';
+import vid9 from './videos/9.mp4';
+import vid10 from './videos/10.mp4';
+import vid11 from './videos/11.mp4';
+import vid12 from './videos/12.mp4';
+
 // ── Fonts ──────────────────────────────────────────────────────────────────
 const FontLink = () => (
   <style>{`
@@ -420,19 +476,52 @@ const ACTIVITIES = [
   { title: "Coffee Walking Tour", img: "https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s4f4dce6430c23411/image/ic4a8d19ce5075b2d/version/1499785221/image.jpg", desc: "Discover Tanzania's rich coffee heritage on a guided farm walk, from bean to cup, through lush highland plantations." },
 ];
 
+const GALLERY_VIDEOS = [
+  vid1, vid2, vid3, vid4, vid5, vid6,
+  vid7, vid8, vid9, vid10, vid11, vid12,
+];
+
 const GALLERY_IMAGES = [
-  "https://www.serengetiparktanzania.com/wp-content/uploads/2019/07/Serengeti-Hot-Air-Balloons.jpg",
-  "https://altezza.travel/upload/medialibrary/4f5/spn6zvn48ntlppwd3y0husljvqtc88tp.webp",
-  "https://cloudfront.safaribookings.com/blog/2021/11/00-top-10-best-tanzania-safari-lodges-camps-BW-header1200px.jpg",
-  "https://images.stockcake.com/public/3/d/6/3d63a6b9-6627-48eb-80b8-855c352deeea_large/safari-sunset-adventure-stockcake.jpg",
-  "https://www.exploretanzaniatours.com/wp-content/uploads/2022/08/materuni-waterfalls-beautiful-750x450.jpg",
-  "https://www.leopard-tours.com/wp-content/uploads/2015/10/Tanzania-Cultural-Tours-2-1024x682.jpg",
-  "https://travelguide.co.tz/wp-content/uploads/2018/04/Marc-Mol_3_small.jpg",
-  "https://www.backtoafricasafaris.com/wp-content/uploads/2021/07/luxury-tanzania-safari-tours.jpg",
-  "https://img.truvvle.com/?src=aHR0cHM6Ly9pbWcudHJhdmVsZmVlZC5pby92Y2Nsb3RoaW5nJTJGMjAyMDAxMzBUMTEyMTQxODM1Wi1JTUdfMjAyMDAxMDFfMTgzNDAzXzEuanBn&width=1920",
-  "https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/s4f4dce6430c23411/image/ic4a8d19ce5075b2d/version/1499785221/image.jpg",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9XnRPWQEVm4XbSog5EznKdY4TdZTeUtwSRahULZd6PqAhjEWUDI98rIi2ps6mf-QMR_A&usqp=CAU",
-  "https://www.serengetiparktanzania.com/wp-content/uploads/2019/07/Serengeti-Hot-Air-Balloons.jpg",
+  { src: img1, alt: 'Tour Image 1' },
+  { src: img2, alt: 'Tour Image 2' },
+  { src: img3, alt: 'Tour Image 3' },
+  { src: img4, alt: 'Tour Image 4' },
+  { src: img5, alt: 'Tour Image 5' },
+  { src: img6, alt: 'Tour Image 6' },
+  { src: img7, alt: 'Tour Image 7' },
+  { src: img8, alt: 'Tour Image 8' },
+  { src: img9, alt: 'Tour Image 9' },
+  { src: img10, alt: 'Tour Image 10' },
+  { src: img11, alt: 'Tour Image 11' },
+  { src: img12, alt: 'Tour Image 12' },
+  { src: img13, alt: 'Tour Image 13' },
+  { src: img14, alt: 'Tour Image 14' },
+  { src: img15, alt: 'Tour Image 15' },
+  { src: img16, alt: 'Tour Image 16' },
+  { src: img17, alt: 'Tour Image 17' },
+  { src: img18, alt: 'Tour Image 18' },
+  { src: img19, alt: 'Tour Image 19' },
+  { src: img20, alt: 'Tour Image 20' },
+  { src: img21, alt: 'Tour Image 21' },
+  { src: img22, alt: 'Tour Image 22' },
+  { src: img23, alt: 'Tour Image 23' },
+  { src: img24, alt: 'Tour Image 24' },
+  { src: img25, alt: 'Tour Image 25' },
+  { src: img26, alt: 'Tour Image 26' },
+  { src: img27, alt: 'Tour Image 27' },
+  { src: img28, alt: 'Tour Image 28' },
+  { src: img29, alt: 'Tour Image 29' },
+  { src: img30, alt: 'Tour Image 30' },
+  { src: img31, alt: 'Tour Image 31' },
+  { src: img32, alt: 'Tour Image 32' },
+  { src: img33, alt: 'Tour Image 33' },
+  { src: img34, alt: 'Tour Image 34' },
+  { src: img35, alt: 'Tour Image 35' },
+  { src: img36, alt: 'Tour Image 36' },
+  { src: img37, alt: 'Tour Image 37' },
+  { src: img38, alt: 'Tour Image 38' },
+  { src: img39, alt: 'Tour Image 39' },
+  { src: img40, alt: 'Tour Image 40' },
 ];
 
 // ── COMPONENTS ─────────────────────────────────────────────────────────────
@@ -756,16 +845,22 @@ function GalleryPage() {
         </div>
         {showPhotos ? (
           <div className="gallery-grid">
-            {GALLERY_IMAGES.map((src, i) => (
+            {GALLERY_IMAGES.map((image, i) => (
               <div key={i} className="gallery-item">
-                <img src={src} alt={`Tour ${i + 1}`} loading="lazy" />
+                <img src={image.src} alt={image.alt} loading="lazy" />
               </div>
             ))}
           </div>
         ) : (
-          <div style={{ textAlign: "center", padding: "4rem", background: "var(--sand)", borderRadius: "8px" }}>
-            <p style={{ fontFamily: "var(--serif)", fontSize: "1.4rem", color: "var(--earth)", fontStyle: "italic" }}>Videos available on request</p>
-            <p style={{ color: "var(--smoke)", marginTop: "0.5rem", fontSize: "0.9rem" }}>Contact us via WhatsApp to view our latest tour videos.</p>
+          <div className="gallery-grid">
+            {GALLERY_VIDEOS.map((src, i) => (
+              <div key={i} className="gallery-item">
+                <video width="100%" height="100%" controls autoPlay muted loop style={{ objectFit: "cover", borderRadius: "6px" }}>
+                  <source src={src} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            ))}
           </div>
         )}
       </div>
