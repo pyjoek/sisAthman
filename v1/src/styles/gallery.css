@@ -1,0 +1,53 @@
+/* src/styles/gallery.css */
+
+.gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between images */
+}
+
+.gallery-item {
+    flex: 1 1 calc(20% - 20px); /* Adjust based on the number of images per row */
+    box-sizing: border-box;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    height: 200px; /* Fixed height for all images */
+}
+
+.gallery-item img {
+    width: 100%; /* Make image take up full width of its container */
+    height: 100%; /* Make image take up full height of its container */
+    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+    display: block; /* Removes any default inline spacing */
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .gallery-item {
+        flex: 1 1 calc(33.333% - 20px); /* 3 items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 1 1 calc(50% - 20px); /* 2 items per row */
+    }
+}
