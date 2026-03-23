@@ -56,6 +56,9 @@ import vid10 from './videos/10.mp4';
 import vid11 from './videos/11.mp4';
 import vid12 from './videos/12.mp4';
 
+import Kilimanjaros from './img/kilimanjaro.jpg';
+
+
 // ── Fonts ──────────────────────────────────────────────────────────────────
 const FontLink = () => (
   <style>{`
@@ -522,6 +525,7 @@ const GALLERY_IMAGES = [
   { src: img38, alt: 'Tour Image 38' },
   { src: img39, alt: 'Tour Image 39' },
   { src: img40, alt: 'Tour Image 40' },
+  { src: Kilimanjaros, alt: 'Mount Kilimanjaro' }
 ];
 
 // ── COMPONENTS ─────────────────────────────────────────────────────────────
@@ -709,7 +713,7 @@ function KilimanjaroPage() {
         <div className="divider" />
         <p style={{ marginBottom: "2rem", color: "var(--smoke)", fontSize: "1rem", lineHeight: 1.8 }}>A once-in-a-lifetime adventure in Tanzania</p>
 
-        <img className="kili-hero" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Kilimanjaro_from_Amboseli.jpg/1280px-Kilimanjaro_from_Amboseli.jpg" alt="Mount Kilimanjaro" onError={e => { e.target.src = "https://images.stockcake.com/public/3/d/6/3d63a6b9-6627-48eb-80b8-855c352deeea_large/safari-sunset-adventure-stockcake.jpg"; }} />
+        <img className="kili-hero" src={Kilimanjaros} onError={e => { e.target.src = "https://images.stockcake.com/public/3/d/6/3d63a6b9-6627-48eb-80b8-855c352deeea_large/safari-sunset-adventure-stockcake.jpg"; }} />
 
         <div className="kili-grid">
           <div className="kili-block">
